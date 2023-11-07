@@ -1,0 +1,20 @@
+footer {
+    background-color: #700000;
+    margin: 1rem 0 0 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

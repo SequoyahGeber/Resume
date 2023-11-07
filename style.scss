@@ -1,20 +1,23 @@
+// Imported SCSS
+
+
 /* Import color variables */
-@import "/partials/variables/colors.scss";
+@import "partials/variables/colors.scss";
 
 /* Import font variables */
-@import "/partials/variables/fonts.scss";
+@import "partials/variables/fonts.scss";
 
 /* Import header styles */
-@import "/partials/header";
+@import "partials/header";
 
 /* Import navigation styles */
-@import "/partials/nav";
+@import "partials/nav";
 
 /* Import body styles */
-@import "/partials/body";
+@import "partials/body";
 
 /* Import main content styles */
-@import "/partials/main";
+@import "partials/main";
 
 /* Import footer styles */
-@import "/partials/footer";
+@import "partials/footer";
