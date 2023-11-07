@@ -136,9 +136,6 @@ aside section img {
   width: 20px;
   padding: 0.5rem 0.25rem;
 }
-aside section li:hover {
-  transform: scale(1.1);
-}
 aside section.contact {
   margin: 1rem 0;
   padding-bottom: 2rem;
@@ -152,6 +149,9 @@ aside section.contact ul li {
   padding: 0.5rem;
   max-height: 16.8px;
   transition: all 0.25s;
+}
+aside section.contact ul li:hover {
+  transform: scale(1.1);
 }
 
 .box {
