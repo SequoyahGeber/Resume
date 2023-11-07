@@ -1,39 +1,81 @@
 main {
     display: block;
     margin: 1rem 2%;
-}
 
-section {
-    margin: 1rem 0;
-    border-bottom: 3px solid #700000;
-    border-radius: 10px;
-}
+    section {
+        background-color: $mainColor2;
+        margin: 1rem 0;
+        border-bottom: 3px solid $accentColor2;
+        border-radius: 10px;
 
-main section.employment p {
-    border-bottom: 2px dashed white;
-    padding: 0 0 0.5rem 0;
+        h2 {
+            color: $accentColor1;
+        }
+
+
+        .employment p {
+            border-bottom: 2px dashed $mainColor1;
+            padding: 0 0 0.5rem 0;
+        }
+    }
+
+
 }
 
 aside {
     display: block;
     margin: 1rem 0.5rem;
+
+    section {
+        background-color: $mainColor2;
+
+        margin: 1rem 0;
+        border-bottom: 3px solid $accentColor2;
+        border-radius: 10px;
+
+        h2 {
+            color: $accentColor1;
+        }
+
+        img {
+            width: 20px;
+            padding: 0.5rem 0.25rem;
+        }
+
+
+
+        li:hover {
+            transform: scale(1.1);
+        }
+
+
+    }
+
+    section.contact {
+        margin: 1rem 0;
+        padding-bottom: 2rem;
+
+        ul {
+            list-style-type: none !important;
+
+            li {
+                list-style-type: none !important;
+
+                margin: 1rem;
+                padding: 0.5rem;
+                max-height: 16.8px;
+                transition: all 0.25s;
+            }
+        }
+    }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
-a:focus,
-p:focus {
-    border-color: #700000;
-    outline: 3px solid #700000;
-}
 
-img {
-    width: 20px;
-    padding: 0.5rem 0.25rem;
-}
+
+
+
+
 
 .box {
     display: flex;
@@ -41,22 +83,7 @@ img {
     justify-content: flex-start;
 }
 
-.contact ul li {
-    list-style-type: none;
-    margin: 1rem;
-    padding: 0.5rem;
-    max-height: 16.8px;
-    transition: all 0.25s;
-}
 
-.contact li:hover {
-    transform: scale(1.1);
-}
-
-.contact {
-    margin: 1rem 0;
-    padding-bottom: 2rem;
-}
 
 @media screen and (min-width: 1100px) {
     main {

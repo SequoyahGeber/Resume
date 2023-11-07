@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap");
 /* Import header styles */
 header {
-  background-color: #700000;
+  background-color: #2e3440;
 }
 
 h1,
@@ -15,14 +15,13 @@ h3 {
 h1 {
   margin: 0;
   padding: 1rem;
-  color: white;
+  color: #ebcb8b;
   font-size: 3rem;
 }
 
 header p {
   margin: 0;
   padding: 1rem;
-  color: white;
 }
 
 h2 {
@@ -47,7 +46,7 @@ h3 {
     display: inline-block;
   }
   h2 {
-    border-left: 2px solid #700000;
+    border-left: 2px solid #f4c871;
     padding: 0.25rem;
   }
   header {
@@ -63,20 +62,21 @@ html {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #373f4d;
 }
 
 body {
   margin: 0;
   padding: 0;
+  color: whitesmoke;
 }
 
 a {
-  color: #700000;
+  color: #ebcb8b;
 }
 
 li::marker {
-  color: #700000;
+  color: #ebcb8b;
 }
 
 @media screen and (min-width: 1100px) {
@@ -94,20 +94,28 @@ li::marker {
     width: 10rem;
   }
 }
+a:focus,
+p:focus {
+  border-color: #ebcb8b;
+  outline: 3px solid #ebcb8b;
+}
+
 /* Import main content styles */
 main {
   display: block;
   margin: 1rem 2%;
 }
-
-section {
+main section {
+  background-color: #343a48;
   margin: 1rem 0;
-  border-bottom: 3px solid #700000;
+  border-bottom: 3px solid #f4c871;
   border-radius: 10px;
 }
-
-main section.employment p {
-  border-bottom: 2px dashed white;
+main section h2 {
+  color: #ebcb8b;
+}
+main section .employment p {
+  border-bottom: 2px dashed #2e3440;
   padding: 0 0 0.5rem 0;
 }
 
@@ -115,44 +123,41 @@ aside {
   display: block;
   margin: 1rem 0.5rem;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
+aside section {
+  background-color: #343a48;
+  margin: 1rem 0;
+  border-bottom: 3px solid #f4c871;
+  border-radius: 10px;
 }
-
-a:focus,
-p:focus {
-  border-color: #700000;
-  outline: 3px solid #700000;
+aside section h2 {
+  color: #ebcb8b;
 }
-
-img {
+aside section img {
   width: 20px;
   padding: 0.5rem 0.25rem;
 }
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+aside section li:hover {
+  transform: scale(1.1);
 }
-
-.contact ul li {
-  list-style-type: none;
+aside section.contact {
+  margin: 1rem 0;
+  padding-bottom: 2rem;
+}
+aside section.contact ul {
+  list-style-type: none !important;
+}
+aside section.contact ul li {
+  list-style-type: none !important;
   margin: 1rem;
   padding: 0.5rem;
   max-height: 16.8px;
   transition: all 0.25s;
 }
 
-.contact li:hover {
-  transform: scale(1.1);
-}
-
-.contact {
-  margin: 1rem 0;
-  padding-bottom: 2rem;
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 1100px) {
@@ -191,14 +196,14 @@ img {
 }
 /* Import footer styles */
 footer {
-  background-color: #700000;
+  background-color: #2e3440;
   margin: 1rem 0 0 0;
 }
 
 footer p {
   margin: 0;
   padding: 0.5rem;
-  color: white;
+  color: #ebcb8b;
   text-align: center;
 }
 

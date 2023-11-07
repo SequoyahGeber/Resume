@@ -1,5 +1,5 @@
 header {
-    background-color: #700000;
+    background-color: $mainColor1;
 }
 
 h1,
@@ -11,14 +11,13 @@ h3 {
 h1 {
     margin: 0;
     padding: 1rem;
-    color: white;
+    color: $accentColor1;
     font-size: 3rem;
 }
 
 header p {
     margin: 0;
     padding: 1rem;
-    color: white;
 }
 
 h2 {
@@ -45,7 +44,7 @@ h3 {
     }
 
     h2 {
-        border-left: 2px solid #700000;
+        border-left: 2px solid $accentColor2;
         padding: 0.25rem;
     }
 

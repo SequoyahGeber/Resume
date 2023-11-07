@@ -3,21 +3,22 @@ html {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: $mainColor3;
 }
 
 body {
     margin: 0;
     padding: 0;
+    color: whitesmoke;
 }
 
 
 a {
-    color: #700000;
+    color: $accentColor1;
 }
 
 li::marker {
-    color: #700000;
+    color: $accentColor1;
 }
 
 @media screen and (min-width: 1100px) {
@@ -36,4 +37,10 @@ li::marker {
     .logo {
         width: 10rem;
     }
+}
+
+a:focus,
+p:focus {
+    border-color: $accentColor1;
+    outline: 3px solid $accentColor1;
 }
